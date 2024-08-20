@@ -1,0 +1,22 @@
+.om-gradient-text {
+  --gradient-from: #ffaa40;
+  --gradient-to: #9c40ff;
+
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 300% 100%;
+  background-image: linear-gradient(
+    to right,
+    var(--gradient-from),
+    var(--gradient-to),
+    var(--gradient-from)
+  );
+  animation: om-gradient 8s linear infinite;
+}
+
+@keyframes om-gradient {
+  100% {
+    background-position: 300% 0;
+  }
+}
