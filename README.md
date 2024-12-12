@@ -1,5 +1,13 @@
 # ngx-gradient-text
 
+<a href="https://ngxui.com" target="_blank" style="display: flex;gap: .5rem;align-items: center;cursor: pointer; padding: 0 0 0 0; height: fit-content;">
+  <img src="https://ngxui.com/assets/img/ngxui-logo.png" style="width: 64px;height: 64px;">
+  <p style="font-weight: bold; padding: 0; margin: 0; font-size: 4rem">NGXUI</p>
+</a>
+
+This Library is part of the NGXUI ecosystem. <br>
+View all available components at https://ngxui.com
+
 `@omnedia/ngx-gradient-text` is an Angular library that provides a dynamic gradient animation effect for text. This component allows you to display text with a smooth, animated gradient that transitions between two customizable colors.
 
 ## Features
@@ -21,21 +29,23 @@ npm install @omnedia/ngx-gradient-text
 Import the `NgxGradientTextComponent` in your Angular module or component:
 
 ```typescript
-import { NgxGradientTextComponent } from '@omnedia/ngx-gradient-text';
+import {NgxGradientTextComponent} from '@omnedia/ngx-gradient-text';
 
 @Component({
   ...
-  imports: [
-    ...
-    NgxGradientTextComponent,
-  ],
+    imports:
+[
   ...
+    NgxGradientTextComponent,
+],
+...
 })
 ```
 
 Use the component in your template:
 
 ```html
+
 <om-gradient-text
   [text]="'Gradient Text Effect!'"
   [gradientStart]="'#ff7f50'"
@@ -47,6 +57,7 @@ Use the component in your template:
 ## API
 
 ```html
+
 <om-gradient-text
   [text]="text"
   [gradientStart]="gradientStart"
@@ -63,6 +74,7 @@ Use the component in your template:
 ## Example
 
 ```html
+
 <om-gradient-text
   [text]="'Hello World!'"
   [gradientStart]="'#ff69b4'"
