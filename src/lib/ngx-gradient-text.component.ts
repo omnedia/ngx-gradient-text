@@ -1,5 +1,5 @@
-import { CommonModule } from "@angular/common";
-import { Component, Input, OnInit } from "@angular/core";
+import {CommonModule} from "@angular/common";
+import {ChangeDetectionStrategy, Component, Input, OnInit} from "@angular/core";
 
 @Component({
   selector: "om-gradient-text",
@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from "@angular/core";
   imports: [CommonModule],
   templateUrl: "./ngx-gradient-text.component.html",
   styleUrl: "./ngx-gradient-text.component.scss",
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NgxGradientTextComponent implements OnInit {
   @Input("styleClass")
